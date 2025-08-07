@@ -1,4 +1,4 @@
-const targetDate = new Date("Jan 1, 2025 00:00:00").getTime();
+const targetDate = new Date("Jan 1, 2026 00:00:00").getTime();
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
@@ -33,4 +33,5 @@ function formatNumber(num) {
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
 
