@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  color: #b3b3b3; /* better contrast on background */
+  color: #f7f7f7; /* better contrast on background */
   text-shadow: 0 1px 3px rgba(0,0,0,0.6); /* subtle shadow for readability */
 }
 
@@ -88,5 +88,6 @@ h1 {
     font-size: 0.9rem;
   }
 }
+
 
 
