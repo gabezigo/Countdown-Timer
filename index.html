@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-        initial-scale=1.0"
-    />
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/8c17578c74.css"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <h1>New Years Eve</h1>
-
-    <div class="countdown-container">
-      <div class="countdown-el days-c">
-        <p class="big-text" id="days">0</p>
-        <span>days</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="timer-wrapper">
+    <h1 class="title">Countdown to 2026 🎉</h1>
+    <div class="timer">
+      <div class="unit">
+        <span id="days">00</span>
+        <small>Days</small>
       </div>
-      <div class="countdown-el hours-c">
-        <p class="big-text" id="hours">0</p>
-        <span>hours</span>
+      <div class="unit">
+        <span id="hours">00</span>
+        <small>Hours</small>
       </div>
-      <div class="countdown-el mins-c">
-        <p class="big-text" id="mins">0</p>
-        <span>mins</span>
+      <div class="unit">
+        <span id="minutes">00</span>
+        <small>Minutes</small>
       </div>
-      <div class="countdown-el seconds-c">
-        <p class="big-text" id="seconds">0</p>
-        <span>seconds</span>
+      <div class="unit">
+        <span id="seconds">00</span>
+        <small>Seconds</small>
       </div>
     </div>
-  </body>
+  </main>
+</body>
 </html>
-
