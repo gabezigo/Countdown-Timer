@@ -12,32 +12,79 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
+  color: #fff; /* better contrast on background */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6); /* subtle shadow for readability */
 }
 
 h1 {
-  font-weight: normal;
-  font-size: 4rem;
-  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 
 .countdown-container {
   display: flex;
+  text-align: center;
+  gap: 2rem; /* spacing between elements */
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  justify-content: center;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .big-text {
-  font-weight: bold;
-  font-size: 6rem;
+  font-weight: 700;
+  font-size: 5rem;
   line-height: 1;
-  margin: 0 2rem;
-}
-
-.countdown-container {
-  text-align: center;
+  margin: 0 1rem;
+  min-width: 70px;
 }
 
 .countdownt-el span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  .countdown-container {
+    gap: 1.5rem;
+  }
+  .big-text {
+    font-size: 3.5rem;
+    margin: 0 0.5rem;
+    min-width: 50px;
+  }
+  .countdownt-el span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .countdown-container {
+    gap: 1rem;
+  }
+  .big-text {
+    font-size: 2.5rem;
+    margin: 0 0.25rem;
+    min-width: 40px;
+  }
+  .countdownt-el span {
+    font-size: 0.9rem;
+  }
+}
